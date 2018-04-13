@@ -6,6 +6,8 @@ to detect and avoid objects in its path.
 
 Repository Contents
 ============
+* **/hardware** - This is where the fritzing schematic is stored
+* **/img** - 
 * **/src** - where the files that should be uploaded to the arduino are stored
 * **/LICENSE** - MIT
 * **/README.md**
@@ -24,6 +26,9 @@ Bill of Materials:
 * 1 x breadboard
 * 1 x arduino uno
 
+Useful materials:
+* female to male jumpers
+
 Build Instructions
 ==================
 
@@ -33,9 +38,11 @@ The first step to building an autonomous RC car is removing the car's built in m
 
 ### 2. Signal LEDs
 
-
+The next step is to install the LEDs that are going to be used to signal the direction that the car is going to turn. To install the LEDs connect a numbered digital pin on the arduino to a Terminal strip on the breadboard. Then connect the ground pin on the arduino to a ground rail on the breadboard. From there you will want to use the 560 ohm resistor to connect the ground rail on the breadboard to a Terminal strip on the breadboard that is directly adjacent to the one connected to the digital pin. Once one Terminal strip is connected to the ground rail and the other is connected a digital pin you can connect two LEDs to the Terminal strips either directly or using a jumper. The long leg of the LEDs connects to the Terminal strip that goes to the digital pin and the short leg connects to the Terminal strip that goes to the ground. Repeat this one more time so that you have two LEDs to signal left and two LEDs to signal right.
 
 ### Ultrasonic Sensor
+
+Once the LEDs are done it is time to move on to the Ultrasonic Sensor. The Ulstrasonic sensor only requires four jumpers to connect it to the arduino. First connect the ground pin on the Ultrasonic sensor to either the ground rail on the bread board or a open ground pin on the arduino. Then connect the power pin on the ultrasonic sensor to either the 5v pin on the arduino or if the 5v pin is connected to the breadboard connect it to the positive rail on the breadboard. After the ultrasonic sensor has power connect both the trigger and echo pins on the sensor to two different digital pins on the arduino. I personaly perfer to connect the echo and trigger to none pwm pins so that I can use them for other things that may need analog outputs or inputs.
 
 ### Motor driver
 
