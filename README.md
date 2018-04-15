@@ -6,7 +6,7 @@ This project is an arduino uno based autonomus race car. The goal of this projec
 Repository Contents
 ============
 * **/hardware** - This is where the fritzing schematic is stored
-* **/img** - 
+* **/img** - where images of the project and schematic are stored
 * **/src** - where the files that should be uploaded to the arduino are stored
 * **/LICENSE** - MIT
 * **/README.md**
@@ -59,7 +59,9 @@ After the project is fully assembled and good to go it is time to connect the ba
 
 ### Final build schematic 
 
-[Schematic_Build_View]: https://github.com/weRthem/CS207-Patrick-Larsen/blob/master/img/schematic_Build_View_schem.jpg
+![alt text][Schematic]
+
+[Schematic]: https://github.com/weRthem/CS207-Patrick-Larsen/blob/master/img/schematic_Build_View_schem.jpg "final build Schematic"
 
 Usage
 =====
